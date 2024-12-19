@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Design Portfolio</title>
+    <!-- here meata tages -->
+
+    <meta name="description" content="Explore FreeTemplates for a vast collection of free code templates, pre-built animations, and resources in all programming languages. Perfect for developers looking to enhance their projects with ease.">
+
+    <!-- Meta Keywords (optional) -->
+    <meta name="keywords" content="free code templates, animation templates, HTML templates, CSS code, JavaScript templates, free code resources, web development">
+
+    <!-- Other SEO Tags (optional) -->
+    <meta name="robots" content="index, follow"> <!-- Allows search engines to index the page and follow links -->
+    
+    <!-- Open Graph (optional, for social media sharing) -->
+    <meta property="og:title" content="FreeTemplates - Free Code Templates, Animations, and Resources for Every Language">
+    <meta property="og:description" content="Explore FreeTemplates for a vast collection of free code templates, pre-built animations, and resources in all programming languages. Perfect for developers looking to enhance their projects with ease.">
+    <meta property="og:image" content="URL-to-image-for-social-sharing.jpg">
+    <meta property="og:url" content="https://www.freetemplates.com">
+
+    <!-- Favicon (optional) -->
+    <link rel="icon" href="favicon.ico" type="">
+
+
+
+    <!-- end of meta tages  -->
+
+    <!-- Use only Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="index.css">
+    <style>
+        /* Custom responsive styles */
+        .carousel-inner img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* To make sure the portfolio images and cards resize properly */
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Optional: Adjust navbar for small screens */
+        .navbar-nav {
+            margin-left: auto;
+        }
+
+        /* Custom responsive styles for mobile view */
+        @media (max-width: 767px) {
+            .carousel-caption h3 {
+                font-size: 1.5rem;
+            }
+
+            .carousel-caption p {
+                font-size: 1rem;
+            }
+
+            .portfolio-item {
+                margin-bottom: 1.5rem;
+            }
+
+            .navbar-nav {
+                text-align: center;
+            }
+        }
+
+        /* Extra small screens */
+        @media (max-width: 480px) {
+            .form-group label {
+                font-size: 1rem;
+            }
+
+            .form-control {
+                font-size: 1rem;
+                padding: 0.75rem;
+            }
+
+            .navbar-brand {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Web Designs</a>
+
+        <!-- Button for toggling the navbar on mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span> <!-- This is the hamburger icon -->
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Image Slider -->
+    <header id="home" class="jumbotron text-center p-0">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/lb7CexVCnIhvWs6l6LgQ--0--qmq87.jpg" class="d-block w-100" alt="Design 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Modern Business Website</h3>
+                        <p>A sleek and modern design for a business website.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/3Id3u8XR8yIpAtpy4hY4--0--kjjhp.jpg"
+                        class="d-block w-100" alt="Design 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Creative Portfolio</h3>
+                        <p>A visually appealing portfolio website design for creatives.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/artbreeder-image-2024-12-19T08_20_31.081Z.jpeg"
+                        class="d-block w-100" alt="Design 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>E-Commerce Website</h3>
+                        <p>A clean and user-friendly design for an e-commerce website.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="container">
+        <h2 class="text-center mb-5">My Website Designs</h2>
+
+        <!-- Search Bar -->
+        <!-- Search Input and Button -->
+        <div class="form-group">
+            <label for="search">Search Designs</label>
+            <input type="text" id="search" class="form-control" placeholder="Search by title" />
+        </div>
+        <button id="searchButton" class="btn btn-primary">Search</button>
+
+
+        <!-- Portfolio Items will be populated here -->
+        <div class="row" id="portfolioItems"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 Your Name | All Rights Reserved</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="index.js"></script> <!-- Link to your script -->
+</body>
+
+</html>

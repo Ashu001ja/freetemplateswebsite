@@ -1,0 +1,79 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+header.jumbotron {
+    background-color: #007bff;
+    color: white;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.card img {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #343a40;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+/* Custom styles for the portfolio section */
+#portfolio {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+}
+
+#portfolio .card {
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#portfolio .card-img-top {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+#portfolio .card-body {
+    padding: 20px;
+}
+
+#portfolio .btn {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+.jumbotron {
+    background-color: #343a40;
+    color: white;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1.25rem;
+}
+
+#portfolio {
+    padding: 50px 0;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+}
